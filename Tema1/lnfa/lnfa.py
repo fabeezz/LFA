@@ -21,6 +21,9 @@ def lnfa(cuvant):
             stariLambda |= tranzitiiNoi
         return stariLambda
 
+    for i in range(1, 6):
+        print(starePrinLambda([str(i)]))
+
     stariCurente = starePrinLambda({stareaInitiala})
     
     for litera in cuvant:
