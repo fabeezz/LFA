@@ -1,1 +1,11 @@
-aaabb aaaac aabbb aaacb abbbb aacbb 
+aaabb
+aabbb
+aabcc
+abbbb
+abbcc
+abccc
+bbbbb
+bbbcc
+bbccc
+bcccc
+ccccc

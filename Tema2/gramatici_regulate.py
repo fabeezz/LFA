@@ -6,19 +6,21 @@ def cuvinte(n):
 
     while n>1:
         word_list_new = []
-        length = len(word_list)
         for word in word_list:
             for index in range(len(word)):
                 if word[index] in dict.keys():
                     for prod in dict[word[index]]:
-                        word_list_new.append(f'{word[:index]}{prod}')
+                        if prod != '.':
+                            word_list_new.append(f'{word[:index]}{prod}')
+                        else:
+                            word_list_new.append(f'{word[:index]}')
         word_list = word_list_new
         n -= 1
 
     with open("outputfile.txt", "w") as g:
         for word in word_list:
             if word.islower():
-                g.write(f'{word} ')
+                g.write(f'{word}\n')
 
 with open("inputfile.txt") as f:
     dict = {}
