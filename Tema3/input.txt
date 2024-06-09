@@ -1,0 +1,7 @@
+q1
+q2
+aaabb aaabbb aaabbbb
+q1 a $ -> q1 A
+q1 a A -> q1 A
+q1 b A -> q2 pop
+q2 b A -> q2 pop
